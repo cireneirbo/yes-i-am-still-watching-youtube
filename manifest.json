@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "Stream On",
+    "version": "1.0",
+  
+    "description": "An extension for auto-clicking 'Yes' when prompted if the user is still watching Youtube.com's videos.",
+  
+    "icons": {
+      
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["streamOn.js"]
+      }
+    ]
+  
+  }
